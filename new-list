@@ -1,0 +1,7 @@
+import csv
+
+with open('INSERT CSV FILE PATH HERE', 'r') as file:
+    reader = csv.reader(file)
+    next(reader)  # skip the header row
+    for row in reader:
+        print(row)
